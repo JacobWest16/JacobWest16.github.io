@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link id="theme" rel="stylesheet" href="css/light.css">
+    <script>
+        function toggleTheme() {
+            var theme = document.getElementsByTagName('link')[0];
+
+            if (theme.getAttribute('href') == 'css/light.css') {
+                theme.setAttribute('href', 'css/dark.css');
+            } else {
+                theme.setAttribute('href', 'css/light.css');
+            }
+        }
+    </script>
+</head>
+<body>
+    <section>
+        <h1 class="gameTitle">Tic Tac Toe</h1>
+        <div class="gameContainer">
+            <div data-cell-index="0" class="cell"></div>
+            <div data-cell-index="1" class="cell"></div>
+            <div data-cell-index="2" class="cell"></div>
+            <div data-cell-index="3" class="cell"></div>
+            <div data-cell-index="4" class="cell"></div>
+            <div data-cell-index="5" class="cell"></div>
+            <div data-cell-index="6" class="cell"></div>
+            <div data-cell-index="7" class="cell"></div>
+            <div data-cell-index="8" class="cell"></div>
+        </div>
+        <h2 class="gameStatus"></h2>
+        <div>
+            <button 
+            class="gameRestart" 
+            type="button">Restart Game</button>
+        </div>
+        <div style="margin-top: 5px;">
+            <button 
+            class="changeGameColor" 
+            type="button" onclick='toggleTheme();' value='toggleTheme'/>Flip the Lights</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

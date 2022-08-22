@@ -1,0 +1,51 @@
+body {
+    font-family: "Arial", sans-serif;
+    color: white;
+    background-color: black;
+}
+
+section {
+    text-align: center;
+}
+
+.gameContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 50px auto;
+}
+
+.cell {
+    font-family: "Permanent Marker", cursive;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 2px white;
+    border: 2px solid white;
+    cursor: pointer;
+
+    line-height: 100px;
+    font-size: 60px;
+}
+
+.gameRestart, .changeGameColor {
+    top:50%;
+    background-color:white;
+    color:black;
+    border: none; 
+    border-radius: 10px; 
+    padding: 15px;
+    min-height: 30px; 
+    min-width: 120px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+  }
+
+    .gameRestart:hover, .changeGameColor:hover {
+        background-color:rgb(165, 165, 165);
+        transition: 0.4s;
+    }
+
+    .gameRestart:active, .changeGameColor:active {
+        background-color: white;
+    }
